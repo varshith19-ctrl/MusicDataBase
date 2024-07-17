@@ -1,5 +1,3 @@
-create database uber;
-use uber;
 create table subscription(
 s_id varchar(256) not null primary key,
 cost float
