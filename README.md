@@ -24,12 +24,7 @@ The database contains the following core tables:
 | `SongGenres` | Many-to-many between songs and genres           |
 | `PlaylistSongs` | Many-to-many between playlists and songs     |
 
-Optional advanced tables (if implemented):
-- `Follows` (users following artists)
-- `Ratings` (user ratings for songs or albums)
-- `ListeningHistory` (when and how often a song was played)
 
----
 
 ## 🛠️ Technologies Used
 
@@ -54,13 +49,15 @@ mysql -u root -p < schema.sql
 ### 3️⃣ Run Queries
 
 -- Get top 10 longest songs
+example:-
+
 SELECT title, duration FROM Songs ORDER BY duration DESC LIMIT 10;
 
 -- List all albums by a specific artist
 SELECT a.name AS artist, al.title AS album
 FROM Albums al
 JOIN Artists a ON al.artist_id = a.artist_id
-WHERE a.name = 'Taylor Swift';
+WHERE a.name = 'AR Rahman';
 
 -- Find playlists that contain more than 5 songs
 SELECT p.name, COUNT(ps.song_id) AS total_songs
