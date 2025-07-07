@@ -1,4 +1,4 @@
-# 🎵 MusicDataBase - Explore Music with SQL Queries
+# 🎵 MusicDataBase - Explore Music with SQL Queries 
 
 **MusicDataBase** is a relational database application that allows users to explore and analyze music data using custom SQL queries. It includes structured tables for **Artists**, **Albums**, **Songs**, **Genres**, **Playlists**, **Users**, and more — offering a hands-on way to practice database concepts and query optimization.
 
